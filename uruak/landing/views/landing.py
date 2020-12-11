@@ -31,7 +31,7 @@ def contact(request):
         }
         message = render_to_string('emails/contact.html', context, request=request)
         subject = '[Contacto Uruak]'+request.POST['subject']
-        email_address = 'anibal@sappitotech.com'
+        email_address = 'luisdabe@gmail.com'
         email = EmailMessage(subject, message, 'cardozo.anibal@gmail.com', [email_address])
         email.content_subtype = 'html'
         email.send()
