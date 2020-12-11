@@ -1,0 +1,419 @@
+{% extends 'layouts/base.html' %}
+{% block content%}
+{% load static %}    
+	<!-- Banner -->
+	<section class="tm-banner">
+		<!-- Flexslider -->
+		<div class="flexslider flexslider-banner">
+		  <ul class="slides">
+		    <li>
+			    <div class="tm-banner-inner">
+					<h1 class="tm-banner-title">La <span class="tm-yellow-text">mejor</span> comida <span class="tm-yellow-text">marina</span></h1>
+					{% comment %} <p class="tm-banner-subtitle">For Your Holidays</p>
+					<a href="#more" class="tm-banner-link">Learn More</a> {% endcomment %}
+				</div>
+				<img src="{% static 'img/crabfood.jpeg' %}" alt="Image" style="height: 400px; object-fit: cover;"/>	
+		    </li>
+		    <li>
+			    <div class="tm-banner-inner">
+					{% comment %} <h1 class="tm-banner-title">Lorem <span class="tm-yellow-text">Ipsum</span> Dolor</h1> {% endcomment %}
+					{% comment %}<p class="tm-banner-subtitle">Wonderful Destinations</p> {% endcomment %}
+					{% comment %} <a href="#more" class="tm-banner-link">Learn More</a>	 {% endcomment %}
+				</div>
+		      <img src="{% static 'img/urvak-salmon.jpg' %}" alt="Image" style="height: 400px; object-fit: cover;"/>
+		    </li>
+		    <li>
+			    <div class="tm-banner-inner">
+					<h1 class="tm-banner-title">La frescura <span class="tm-yellow-text">perfecta</span></h1>
+					{% comment %} <p class="tm-banner-subtitle">Velit Auctor</p>
+					<a href="#more" class="tm-banner-link">Learn More</a> {% endcomment %}
+				</div>
+		      <img src="{% static 'img/icebox.jpeg' %}" alt="Image" style="height: 400px; object-fit: cover;"/>
+		    </li>
+		  </ul>
+		</div>			
+	</section>
+
+	<!-- gray bg -->	
+	{% comment %} <section class="container tm-home-section-1" id="more">
+		<div class="row">
+			<div class="col-lg-4 col-md-4 col-sm-6">
+				<!-- Nav tabs -->
+				<div class="tm-home-box-1">
+					<ul class="nav nav-tabs tm-white-bg" role="tablist" id="hotelCarTabs">
+					    <li role="presentation" class="active">
+					    	<a href="#hotel" aria-controls="hotel" role="tab" data-toggle="tab">Hotel</a>
+					    </li>
+					    <li role="presentation">
+					    	<a href="#car" aria-controls="car" role="tab" data-toggle="tab">Car Rental</a>
+					    </li>
+					</ul>
+
+					<!-- Tab panes -->
+					<div class="tab-content">
+					    <div role="tabpanel" class="tab-pane fade in active tm-white-bg" id="hotel">
+					    	<div class="tm-search-box effect2">
+								<form action="#" method="post" class="hotel-search-form">
+									<div class="tm-form-inner">
+										<div class="form-group">
+							            	 <select class="form-control">
+							            	 	<option value="">-- Select Hotel -- </option>
+							            	 	<option value="shangrila">Shangri-La</option>
+												<option value="chatrium">Chatrium</option>
+												<option value="fourseasons">Four Seasons</option>
+												<option value="hilton">Hilton</option>
+											</select> 
+							          	</div>
+							          	<div class="form-group">
+							                <div class='input-group date' id='datetimepicker1'>
+							                    <input type='text' class="form-control" placeholder="Check-in Date" />
+							                    <span class="input-group-addon">
+							                        <span class="fa fa-calendar"></span>
+							                    </span>
+							                </div>
+							            </div>
+							          	<div class="form-group">
+							                <div class='input-group date' id='datetimepicker2'>
+							                    <input type='text' class="form-control" placeholder="Check-out Date" />
+							                    <span class="input-group-addon">
+							                        <span class="fa fa-calendar"></span>
+							                    </span>
+							                </div>
+							            </div>
+							            <div class="form-group margin-bottom-0">
+							                <select class="form-control">
+							            	 	<option value="">-- Guests -- </option>
+							            	 	<option value="1">1</option>
+												<option value="2">2</option>
+												<option value="3">3</option>
+												<option value="4">4</option>
+												<option value="5p">5+</option>
+											</select> 
+							            </div>
+									</div>							
+						            <div class="form-group tm-yellow-gradient-bg text-center">
+						            	<button type="submit" name="submit" class="tm-yellow-btn">Check Now</button>
+						            </div>  
+								</form>
+							</div>
+					    </div>
+					    <div role="tabpanel" class="tab-pane fade tm-white-bg" id="car">
+							<div class="tm-search-box effect2">
+								<form action="#" method="post" class="hotel-search-form">
+									<div class="tm-form-inner">
+										<div class="form-group">
+							            	 <select class="form-control">
+							            	 	<option value="">-- Select Model -- </option>
+							            	 	<option value="shangrila">BMW</option>
+												<option value="chatrium">Mercedes-Benz</option>
+												<option value="fourseasons">Toyota</option>
+												<option value="hilton">Honda</option>
+											</select> 
+							          	</div>
+							          	<div class="form-group">
+							                <div class='input-group date-time' id='datetimepicker3'>
+							                    <input type='text' class="form-control" placeholder="Pickup Date" />
+							                    <span class="input-group-addon">
+							                        <span class="fa fa-calendar"></span>
+							                    </span>
+							                </div>
+							            </div>
+							          	<div class="form-group">
+							                <div class='input-group date-time' id='datetimepicker4'>
+							                    <input type='text' class="form-control" placeholder="Return Date" />
+							                    <span class="input-group-addon">
+							                        <span class="fa fa-calendar"></span>
+							                    </span>
+							                </div>
+							            </div>	
+							            <div class="form-group">
+							            	 <select class="form-control">
+							            	 	<option value="">-- Options -- </option>
+							            	 	<option value="">Child Seat</option>
+												<option value="">GPS Navigator</option>
+												<option value="">Insurance</option>
+											</select> 
+							          	</div>						           
+									</div>							
+						            <div class="form-group tm-yellow-gradient-bg text-center">
+						            	<button type="submit" name="submit" class="tm-yellow-btn">Check Now</button>
+						            </div>  
+								</form>
+							</div>
+					    </div>				    
+					</div>
+				</div>								
+			</div>
+
+			<div class="col-lg-4 col-md-4 col-sm-6">
+				<div class="tm-home-box-1 tm-home-box-1-2 tm-home-box-1-center">
+					<img src="{% static 'img/index-01.jpg' %}" alt="image" class="img-responsive">
+					<a href="#">
+						<div class="tm-green-gradient-bg tm-city-price-container">
+							<span>New York</span>
+							<span>$6,600</span>
+						</div>	
+					</a>			
+				</div>				
+			</div>
+			<div class="col-lg-4 col-md-4 col-sm-6">
+				<div class="tm-home-box-1 tm-home-box-1-2 tm-home-box-1-right">
+					<img src="{% static 'img/index-02.jpg' %}" alt="image" class="img-responsive">
+					<a href="#">
+						<div class="tm-red-gradient-bg tm-city-price-container">
+							<span>Paris</span>
+							<span>$4,200</span>
+						</div>	
+					</a>					
+				</div>				
+			</div>
+		</div>
+	
+		<div class="section-margin-top">
+			<div class="row">				
+				<div class="tm-section-header">
+					<div class="col-lg-3 col-md-3 col-sm-3"><hr></div>
+					<div class="col-lg-6 col-md-6 col-sm-6"><h2 class="tm-section-title">Our Tours</h2></div>
+					<div class="col-lg-3 col-md-3 col-sm-3"><hr></div>	
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+					<div class="tm-tours-box-1">
+						<img src="{% static 'img/tours-03.jpg' %}" alt="image" class="img-responsive">
+						<div class="tm-tours-box-1-info">
+							<div class="tm-tours-box-1-info-left">
+								<p class="text-uppercase margin-bottom-20">Proin Gravida Nibhvel Lorem Quis Bind</p>	
+								<p class="gray-text">28 March 2084</p>
+							</div>
+							<div class="tm-tours-box-1-info-right">
+								<p class="gray-text tours-1-description">Lorem quis bibendum auctor, nisi elit consequat ipsum, sec sagittis sem nibh id elit.</p>	
+							</div>							
+						</div>
+						<div class="tm-tours-box-1-link">
+							<div class="tm-tours-box-1-link-left">
+								Duration: 8 days
+							</div>
+							<a href="#" class="tm-tours-box-1-link-right">
+								$2,200								
+							</a>							
+						</div>
+					</div>					
+				</div>
+				<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+					<div class="tm-tours-box-1">
+						<img src="{% static 'img/tours-04.jpg' %}" alt="image" class="img-responsive">
+						<div class="tm-tours-box-1-info">
+							<div class="tm-tours-box-1-info-left">
+								<p class="text-uppercase margin-bottom-20">Proin Gravida Nibhvel Lorem Quis Bind</p>	
+								<p class="gray-text">26 March 2084</p>
+							</div>
+							<div class="tm-tours-box-1-info-right">
+								<p class="gray-text tours-1-description">Lorem quis bibendum auctor, nisi elit consequat ipsum, sec sagittis sem nibh id elit.</p>	
+							</div>							
+						</div>
+						<div class="tm-tours-box-1-link">
+							<div class="tm-tours-box-1-link-left">
+								Duration: 9 days
+							</div>
+							<a href="#" class="tm-tours-box-1-link-right">
+								$1,800								
+							</a>							
+						</div>
+					</div>					
+				</div>
+				<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+					<div class="tm-tours-box-1">
+						<img src="{% static 'img/tours-05.jpg' %}" alt="image" class="img-responsive">
+						<div class="tm-tours-box-1-info">
+							<div class="tm-tours-box-1-info-left">
+								<p class="text-uppercase margin-bottom-20">Proin Gravida Nibhvel Lorem Quis Bind</p>	
+								<p class="gray-text">24 March 2084</p>
+							</div>
+							<div class="tm-tours-box-1-info-right">
+								<p class="gray-text tours-1-description">Lorem quis bibendum auctor, nisi elit consequat ipsum, sec sagittis sem nibh id elit.</p>	
+							</div>							
+						</div>
+						<div class="tm-tours-box-1-link">
+							<div class="tm-tours-box-1-link-left">
+								Duration: 8 days
+							</div>
+							<a href="#" class="tm-tours-box-1-link-right">
+								$1,600								
+							</a>							
+						</div>
+					</div>					
+				</div>
+				<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+					<div class="tm-tours-box-1">
+						<img src="{% static 'img/tours-06.jpg' %}" alt="image" class="img-responsive">
+						<div class="tm-tours-box-1-info">
+							<div class="tm-tours-box-1-info-left">
+								<p class="text-uppercase margin-bottom-20">Proin Gravida Nibhvel Lorem Quis Bind</p>	
+								<p class="gray-text">22 March 2084</p>
+							</div>
+							<div class="tm-tours-box-1-info-right">
+								<p class="gray-text tours-1-description">Lorem quis bibendum auctor, nisi elit consequat ipsum, sec sagittis sem nibh id elit.</p>	
+							</div>							
+						</div>
+						<div class="tm-tours-box-1-link">
+							<div class="tm-tours-box-1-link-left">
+								Duration: 5 days
+							</div>
+							<a href="#" class="tm-tours-box-1-link-right">
+								$1,200								
+							</a>							
+						</div>
+					</div>					
+				</div>
+			</div>		
+		</div>
+	</section>		 {% endcomment %}
+	<!-- gray bg -->	
+	<section class="container tm-home-section-1" id="more">
+		<div class="row">
+			<!-- slider -->
+			<div class="flexslider effect2 effect2-contact tm-contact-box-1">
+				<ul class="slides">
+					<li>
+						<img src="{% static 'img/crabs2.jpeg' %}" style="height:257px; width:494; object-fit: cover;" alt="image" class="contact-image" />
+						<div class="contact-text">
+							<h2 class="slider-title">La frescura perfecta</h2>
+							<h3 class="slider-subtitle">Variedad de pescados y mariscos
+                                nacionales e importados</h3>
+							<p class="slider-description">
+                                Combinamos frescura con conservación máxima de
+                                los más finos sabores y aromas del mar caribe.
+                                Las costas venezolanas nos ofrece
+                                una cantidad versátil de especies
+                                marinas ricas en minerales, vitaminas
+                                y proteínas que URUAK compacta y
+                                pone a tu disposición en prácticos
+                                empaques, prestaciones y los mejores
+                                cortes, para que lleves la calidad y la
+                                porción justa que requieras, todo
+                                sellado y empacado al vacío, porque
+                                conservar el sabor y la frescura para
+                                ti es nuestra misión.
+                                Uruak toda la frescura y el sabor del
+                                Caribe empacada para ti...
+                            </p>
+							<div class="slider-social">
+								<a href="#" class="tm-social-icon"><i class="fa fa-twitter"></i></a>
+								<a href="#" class="tm-social-icon"><i class="fa fa-facebook"></i></a>
+								<a href="#" class="tm-social-icon"><i class="fa fa-pinterest"></i></a>
+								<a href="#" class="tm-social-icon"><i class="fa fa-google-plus"></i></a>
+							</div>
+						</div>			      
+					</li>
+				</ul>
+			</div>
+		</div>
+	</section>
+	<!-- white bg -->
+	<section class="tm-white-bg section-padding-bottom">
+		<div class="container">
+			<div class="row">
+				<div class="tm-section-header section-margin-top">
+					<div class="col-lg-4 col-md-3 col-sm-3"><hr></div>
+					<div class="col-lg-4 col-md-6 col-sm-6"><h2 class="tm-section-title">Productos</h2></div>
+					<div class="col-lg-4 col-md-3 col-sm-3"><hr></div>	
+				</div>				
+			</div>
+
+			<div class="row" style="margin-top: 1em;">
+				<div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 col-xxs-12">
+					<div class="tm-tours-box-2">						
+						<img src="{% static 'img/crabs.jpeg' %}" style="height:185px; width:254px; object-fit:cover;" alt="image" class="img-responsive">
+						<div class="tm-tours-box-2-info">
+							<h3 class="margin-bottom-15">Proin Gravida Nibhvel Lorem Quis Bind</h3>
+							<p>Descripción</p>	
+						</div>						
+						<a href="#" class="tm-tours-box-2-link">Ordenar</a>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 col-xxs-12">
+					<div class="tm-tours-box-2">						
+						<img src="{% static 'img/calms.jpeg' %}" style="height:185px; width:254px; object-fit:cover;" alt="image" class="img-responsive">
+						<div class="tm-tours-box-2-info">
+							<h3 class="margin-bottom-15">Proin Gravida Nibhvel Lorem Quis Bind</h3>
+							<p>Descripción</p>	
+						</div>						
+						<a href="#" class="tm-tours-box-2-link">Ordenar</a>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 col-xxs-12">
+					<div class="tm-tours-box-2">						
+						<img src="{% static 'img/urvak-salmon.jpg' %}" style="height:185px; width:254px; object-fit:cover;" alt="image" class="img-responsive">
+						<div class="tm-tours-box-2-info">
+							<h3 class="margin-bottom-15">Proin Gravida Nibhvel Lorem Quis Bind</h3>
+							<p>Descripción</p>	
+						</div>						
+						<a href="#" class="tm-tours-box-2-link">Ordenar</a>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 col-xxs-12">
+					<div class="tm-tours-box-2">						
+						<img src="{% static 'img/fish.jpeg' %}" style="height:185px; width:254px; object-fit:cover;" alt="image" class="img-responsive">
+						<div class="tm-tours-box-2-info">
+							<h3 class="margin-bottom-15">Proin Gravida Nibhvel Lorem Quis Bind</h3>
+							<p>Descripción</p>	
+						</div>						
+						<a href="#" class="tm-tours-box-2-link">Ordenar</a>
+					</div>
+				</div>
+			</div>
+			
+            <div class="row" style="margin-top: 1em;">
+				<div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 col-xxs-12">
+					<div class="tm-tours-box-2">						
+						<img src="{% static 'img/shrimps.jpeg' %}" style="height:185px; width:254px; object-fit:cover;" alt="image" class="img-responsive">
+						<div class="tm-tours-box-2-info">
+							<h3 class="margin-bottom-15">Proin Gravida Nibhvel Lorem Quis Bind</h3>
+							<p>Descripción</p>	
+						</div>						
+						<a href="#" class="tm-tours-box-2-link">Ordenar</a>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 col-xxs-12">
+					<div class="tm-tours-box-2">						
+						<img src="{% static 'img/fish3.jpeg' %}" style="height:185px; width:254px; object-fit:cover;" alt="image" class="img-responsive">
+						<div class="tm-tours-box-2-info">
+							<h3 class="margin-bottom-15">Proin Gravida Nibhvel Lorem Quis Bind</h3>
+							<p>Descripción</p>	
+						</div>						
+						<a href="#" class="tm-tours-box-2-link">Ordenar</a>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 col-xxs-12">
+					<div class="tm-tours-box-2">						
+						<img src="{% static 'img/fish2.jpeg' %}" style="height:185px; width:254px; object-fit:cover;" alt="image" class="img-responsive">
+						<div class="tm-tours-box-2-info">
+							<h3 class="margin-bottom-15">Proin Gravida Nibhvel Lorem Quis Bind</h3>
+							<p>Descripción</p>	
+						</div>						
+						<a href="#" class="tm-tours-box-2-link">Ordenar</a>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 col-xxs-12">
+					<div class="tm-tours-box-2">						
+						<img src="{% static 'img/food.jpeg' %}" style="height:185px; width:254px; object-fit:cover;" alt="image" class="img-responsive">
+						<div class="tm-tours-box-2-info">
+							<h3 class="margin-bottom-15">Proin Gravida Nibhvel Lorem Quis Bind</h3>
+							<p>Descripción</p>	
+						</div>						
+						<a href="#" class="tm-tours-box-2-link">Ordenar</a>
+					</div>
+				</div>
+			</div>
+			
+            <div class="row">
+				<div class="col-lg-12">
+					<p class="home-description">Lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris.
+					Morbi accumsaipsu m velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non mauris vitae erat.
+					</p>					
+				</div>
+			</div>	
+		</div>
+	</section>
+{% endblock %}

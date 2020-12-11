@@ -1,0 +1,179 @@
+{% extends 'layouts/base.html' %}
+{% block content%}
+{% load static %}    
+    <!-- Banner -->
+	<section class="container tm-home-section-1" id="more" style="padding-top: 6em;">
+		<div class="row">
+			<!-- slider -->
+			<div class="flexslider flexslider-about effect2">
+                <ul class="slides">
+                    <li>
+                    <img src="{% static 'img/arawacos.jpg' %}" style="height: 450px;" alt="image" />
+                    <div class="flex-caption">
+                        <h2 class="slider-title">Uruak</h2>
+                        {% comment %} <h3 class="slider-subtitle">Gravida nibh vel velit auctor aliquet enean sollicitudin lorem quis auctor</h3> {% endcomment %}
+                        <p class="slider-description">
+                            El nombre URUAK hace alusión a un clan de la etnia arawaco,
+                            siendo un dialecto probablemente extínto hablado en el
+                            oriente de Venezuela, río Karum o caroní en el Edo. Bolívar y en
+                            el Norte de Brasil (Roraima) proveniente del lenguaje madre
+                            de los arawacos, la mayoría de los hablantes se han mezclado
+                            con los pemones o los niam, por lo que la lengua materna de
+                            la mayor parte del grupo étnico uruak es ahora el niam.
+                        </p>
+                        {% comment %} <div class="slider-social">
+                            <a href="#" class="tm-social-icon"><i class="fa fa-twitter"></i></a>
+                            <a href="#" class="tm-social-icon"><i class="fa fa-facebook"></i></a>
+                            <a href="#" class="tm-social-icon"><i class="fa fa-pinterest"></i></a>
+                            <a href="#" class="tm-social-icon"><i class="fa fa-google-plus"></i></a>
+                        </div> {% endcomment %}
+                    </div>			      
+                    </li>
+                    <li>
+                    <img src="{% static 'img/arawacos2.jpg' %}" style="height: 450px;" alt="image" />
+                    <div class="flex-caption">
+                        <h2 class="slider-title">Misión</h2>
+                        {% comment %} <h3 class="slider-subtitle">Gravida nibh vel velit auctor aliquet enean sollicitudin lorem quis auctor, nisi elit consequat ipsum</h3> {% endcomment %}
+                        <p class="slider-description">
+                            En este sentído, y con la intención de promover las raíces
+                            aborígenes venezolanas, damos vida a una nueva imagen,
+                            parte de una marca y filosofía en cuanto al expendio de
+                            pescados y mariscos nacionales e importados, buscamos
+                            ofrecer productos con sello de calidad URUAK, manejando
+                            variedad, calidad, frescura y un empaque de seguridad
+                            sanitaria y conservación de sabor como lo es el sellado y
+                            empacado al vacío.
+                        </p>
+                        {% comment %} <div class="slider-social">
+                            <a href="#" class="tm-social-icon"><i class="fa fa-twitter"></i></a>
+                            <a href="#" class="tm-social-icon"><i class="fa fa-facebook"></i></a>
+                            <a href="#" class="tm-social-icon"><i class="fa fa-pinterest"></i></a>
+                            <a href="#" class="tm-social-icon"><i class="fa fa-google-plus"></i></a>
+                        </div> {% endcomment %}
+                    </div>			      
+                    </li>
+                </ul>
+			</div>
+		</div>
+	</section>
+
+	<!-- gray bg -->	
+	<section class="container tm-home-section-1" id="more">
+		<div class="section-margin-top about-section">
+			<div class="row">				
+				<div class="tm-section-header">
+					<div class="col-lg-3 col-md-3 col-sm-3"><hr></div>
+					<div class="col-lg-6 col-md-6 col-sm-6"><h2 class="tm-section-title">¿Quienes somos?</h2></div>
+					<div class="col-lg-3 col-md-3 col-sm-3"><hr></div>	
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+					<div class="tm-about-box-1">
+						<a href="#"><img src="{% static 'img/luis.jpg' %}" style="height: 147px; width: 148px; object-fit: cover;" alt="img" class="tm-about-box-1-img"></a>
+						<h3 class="tm-about-box-1-title">Luis Davila <span>( Fundador )</span></h3>
+						<p class="margin-bottom-15 gray-text">Proin gravida nibhvell aliquet. Aenean sollicitudin bibum auctor nisi elit.</p>
+						<div class="gray-text">
+							<a href="#" class="tm-social-icon"><i class="fa fa-twitter"></i></a>
+							<a href="#" class="tm-social-icon"><i class="fa fa-facebook"></i></a>
+							<a href="#" class="tm-social-icon"><i class="fa fa-pinterest"></i></a>
+							<a href="#" class="tm-social-icon"><i class="fa fa-google-plus"></i></a>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+					<div class="tm-about-box-1">
+						<a href="#"><img src="{% static 'img/about-5.jpg' %}" style="height: 147px; width: 148px; object-fit: cover;" alt="img" class="tm-about-box-1-img"></a>
+						<h3 class="tm-about-box-1-title">Keith <span>( Co-Founder )</span></h3>
+						<p class="margin-bottom-15 gray-text">Proin gravida nibhvell aliquet. Aenean sollicitudin bibum auctor nisi elit.</p>
+						<div class="gray-text">
+							<a href="#" class="tm-social-icon"><i class="fa fa-twitter"></i></a>
+							<a href="#" class="tm-social-icon"><i class="fa fa-facebook"></i></a>
+							<a href="#" class="tm-social-icon"><i class="fa fa-pinterest"></i></a>
+							<a href="#" class="tm-social-icon"><i class="fa fa-google-plus"></i></a>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+					<div class="tm-about-box-1">
+						<a href="#"><img src="{% static 'img/about-6.jpg' %}" style="height: 147px; width: 148px; object-fit: cover;" alt="img" class="tm-about-box-1-img"></a>
+						<h3 class="tm-about-box-1-title">John <span>( General Manager )</span></h3>
+						<p class="margin-bottom-15 gray-text">Proin gravida nibhvell aliquet. Aenean sollicitudin bibum auctor nisi elit.</p>
+						<div class="gray-text">
+							<a href="#" class="tm-social-icon"><i class="fa fa-twitter"></i></a>
+							<a href="#" class="tm-social-icon"><i class="fa fa-facebook"></i></a>
+							<a href="#" class="tm-social-icon"><i class="fa fa-pinterest"></i></a>
+							<a href="#" class="tm-social-icon"><i class="fa fa-google-plus"></i></a>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+					<div class="tm-about-box-1">
+						<a href="#"><img src="{% static 'img/about-7.jpg' %}" style="height: 147px; width: 148px; object-fit: cover;" alt="img" class="tm-about-box-1-img"></a>
+						<h3 class="tm-about-box-1-title">Smith <span>( Manager )</span></h3>
+						<p class="margin-bottom-15 gray-text">Proin gravida nibhvell aliquet. Aenean sollicitudin bibum auctor nisi elit.</p>
+						<div class="gray-text">
+							<a href="#" class="tm-social-icon"><i class="fa fa-twitter"></i></a>
+							<a href="#" class="tm-social-icon"><i class="fa fa-facebook"></i></a>
+							<a href="#" class="tm-social-icon"><i class="fa fa-pinterest"></i></a>
+							<a href="#" class="tm-social-icon"><i class="fa fa-google-plus"></i></a>
+						</div>
+					</div>
+				</div>
+			</div>		
+		</div>
+	</section>		
+	
+	<!-- white bg -->
+	<section class="tm-white-bg section-padding-bottom">
+		<div class="container">
+			<div class="row">
+				<div class="tm-section-header section-margin-top">
+					<div class="col-lg-4 col-md-3 col-sm-3"><hr></div>
+					<div class="col-lg-4 col-md-6 col-sm-6"><h2 class="tm-section-title">¿Qué hacemos?</h2></div>
+					<div class="col-lg-4 col-md-3 col-sm-3"><hr></div>	
+				</div>				
+			</div>
+			<div class="row">
+				<!-- Testimonial -->
+				<div class="col-lg-12">
+					<div class="tm-what-we-do-right">
+						<div class="tm-about-box-2 margin-bottom-30">
+							<img src="{% static 'img/office.jpeg' %}" style="width: 340px; height: 249px; object-fit: cover;" alt="image" class="tm-about-box-2-img">
+							<div class="tm-about-box-2-text">
+								<h3 class="tm-about-box-2-title">Gravida Nibh Vel Velit Auctor Aliquet Etiam</h3>
+				                <p class="tm-about-box-2-description gray-text">Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris in erat justo. Nullam ac urna eu felis.</p>
+				                <p class="tm-about-box-2-footer">Mauris In Erat Justo</p>	
+							</div>		                
+						</div>
+						<div class="tm-about-box-2">
+							<img src="{% static 'img/boats.jpeg' %}" style="width: 340px; height: 249px; object-fit: cover;" alt="image" class="tm-about-box-2-img">
+							<div class="tm-about-box-2-text">
+								<h3 class="tm-about-box-2-title">Sed Non Mauris Vitae Erat Con Ruat Nostra</h3>
+				                <p class="tm-about-box-2-description gray-text">Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris in erat justo. Nullam ac urna eu felis.</p>
+				                <p class="tm-about-box-2-footer">Sednon Mauris Vitae</p>	
+							</div>		                
+						</div>
+					</div>
+					<div class="tm-testimonials-box">
+						<h3 class="tm-testimonials-title">Testimonios</h3>
+						<div class="tm-testimonials-content">
+							<div class="tm-testimonial">
+								<p>"Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum."</p>
+		                		<strong class="text-uppercase">John Smith</strong>	
+							</div>
+							<div class="tm-testimonial">
+								<p>"Nisi elit consequat ipsum, nec sagittis sem nibh id elit duis sed odio sit amet nibh."</p>
+			                	<strong class="text-uppercase">Lorens</strong>		
+							</div>
+	       					<div class="tm-testimonial">
+	       						<p>"Rulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio."<p>
+	                			<strong class="text-uppercase">Robert</strong>
+	       					</div>                	
+						</div>
+					</div>	
+				</div>							
+			</div>			
+		</div>
+	</section>
+{% endblock %}

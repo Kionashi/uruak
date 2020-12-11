@@ -1,0 +1,106 @@
+{% extends 'layouts/base.html' %}
+{% block content%}
+{% load static %}  
+	<!-- Banner -->
+	{% comment %} <section class="tm-banner">
+		<!-- Flexslider -->
+		<div class="flexslider flexslider-banner">
+		  <ul class="slides">
+		    <li>
+			    <div class="tm-banner-inner">
+					<h1 class="tm-banner-title">Your <span class="tm-yellow-text">Special</span> Tour</h1>
+					<p class="tm-banner-subtitle">For Upcoming Holidays</p>
+					<a href="#more" class="tm-banner-link">Contact Us</a>	
+				</div>
+				<img src="{% static 'img/banner-3.jpg' %}" alt="Banner 3" />	
+		    </li>		    
+		  </ul>
+		</div>	
+	</section> {% endcomment %}
+
+	<!-- gray bg -->	
+	{% comment %} <section class="container tm-home-section-1" id="more">
+		<div class="row">
+			<!-- slider -->
+			<div class="flexslider effect2 effect2-contact tm-contact-box-1">
+				<ul class="slides">
+					<li>
+						<img src="{% static 'img/world-map.png' %}" alt="image" class="contact-image" />
+						<div class="contact-text">
+							<h2 class="slider-title">Lorem Isum Dolor</h2>
+							<h3 class="slider-subtitle">Gravida nibh vel velit auctor aliquet enean sollicitudin lorem quis auctor, nisi elit consequat ipsum</h3>
+							<p class="slider-description">Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. <br><br>
+                            Mauris in erat justo. Nullam ac urna eu felis dapibus condimentum sit amet a augue. Sed non neque elit. Sed ut imperdiet nisi. Proin condimentum fermentum nunc. Etiam pharetra, erat sed fermentum feugiat, velit mauris gestas quam, ut aliquam massa nisi.</p>
+							<div class="slider-social">
+								<a href="#" class="tm-social-icon"><i class="fa fa-twitter"></i></a>
+								<a href="#" class="tm-social-icon"><i class="fa fa-facebook"></i></a>
+								<a href="#" class="tm-social-icon"><i class="fa fa-pinterest"></i></a>
+								<a href="#" class="tm-social-icon"><i class="fa fa-google-plus"></i></a>
+							</div>
+						</div>			      
+					</li>
+				</ul>
+			</div>
+		</div>
+	</section>		 {% endcomment %}
+	
+	<!-- white bg -->
+	<section class="section-padding-bottom">
+		<div class="container">
+			<div class="row">
+				<div class="tm-section-header section-margin-top">
+					<div class="col-lg-4 col-md-3 col-sm-3"><hr></div>
+					<div class="col-lg-4 col-md-6 col-sm-6"><h2 class="tm-section-title">Contactanos</h2></div>
+					<div class="col-lg-4 col-md-3 col-sm-3"><hr></div>	
+				</div>				
+			</div>
+			<div class="row">
+                <!-- contact form -->
+                <form action="{% url 'contact' %}" method="post" class="tm-contact-form">
+                    {% csrf_token %}
+                    <div class="col-lg-6 col-md-6">
+                        <div id="google-map">
+                            <div id="wrapper-9cd199b9cc5410cd3b1ad21cab2e54d3">
+                            <div id="map-9cd199b9cc5410cd3b1ad21cab2e54d3"></div><script>(function () {
+                            var setting = {"height":275,"width":555,"zoom":17,"queryString":"Cubo Negro, Caracas, Miranda, Venezuela","place_id":"ChIJf02NpldYKowRS1Hi-3yTNbs","satellite":false,"centerCoord":[10.484214402938727,-66.85304616534427],"cid":"0xbb35937cfbe2514b","lang":"es","cityUrl":"/venezuela/caracas-18517","cityAnchorText":"Mapa de Caracas, Venezuela","id":"map-9cd199b9cc5410cd3b1ad21cab2e54d3","embed_id":"324622"};
+                            var d = document;
+                            var s = d.createElement('script');
+                            s.src = 'https://1map.com/js/script-for-user.js?embed_id=324622';
+                            s.async = true;
+                            s.onload = function (e) {
+                            window.OneMap.initMap(setting)
+                            };
+                            var to = d.getElementsByTagName('script')[0];
+                            to.parentNode.insertBefore(s, to);
+                            })();</script><a href="https://1map.com/es/map-embed">Uruak</a></div>
+                            <div class="contact-social">
+                                <a href="#" class="tm-social-icon tm-social-facebook"><i class="fa fa-facebook"></i></a>
+                                <a href="#" class="tm-social-icon tm-social-dribbble"><i class="fa fa-dribbble"></i></a>
+                                <a href="#" class="tm-social-icon tm-social-twitter"><i class="fa fa-twitter"></i></a>
+                                <a href="#" class="tm-social-icon tm-social-instagram"><i class="fa fa-instagram"></i></a>
+                                <a href="#" class="tm-social-icon tm-social-google-plus"><i class="fa fa-google-plus"></i></a>
+                            </div>
+                        </div>
+                    </div> 
+                    <div class="col-lg-6 col-md-6 tm-contact-form-input">
+                        <div class="form-group">
+                            <input type="text" name="name" class="form-control" placeholder="Nombre y apellido" />
+                        </div>
+                        <div class="form-group">
+                            <input type="email" name="email" class="form-control" placeholder="Correo electronico" />
+                        </div>
+                        <div class="form-group">
+                            <input type="text" name="subject" class="form-control" placeholder="Asunto" />
+                        </div>
+                        <div class="form-group">
+                            <textarea name="message" class="form-control" rows="6" placeholder="Mensaje"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <button class="tm-submit-btn" type="submit" name="submit">Enviar</button> 
+                        </div>               
+                    </div>
+                </form>
+			</div>			
+		</div>
+	</section>
+{% endblock %}
